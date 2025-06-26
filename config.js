@@ -1,0 +1,1 @@
+window.OPENCAGE_API_KEY = "{{OPENCAGE_API_KEY}}";
