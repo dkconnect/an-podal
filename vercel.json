@@ -1,0 +1,33 @@
+{
+  "builds": [
+    {
+      "src": "config.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "logo.png",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/config.js",
+      "destination": "/config.js"
+    }
+  ],
+  "env": {
+    "OPENCAGE_API_KEY": "{{OPENCAGE_API_KEY}}"
+  }
+}
